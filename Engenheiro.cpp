@@ -2,10 +2,17 @@
 #include "Empregado.hpp"
 
 class Engenheiro : public Empregado {
-
+ 
   public:
-    std::string nome;  
-	int projetos;
-	
+    int getprojetos(){
+      return projetos;
+    }
+    void setprojetos(int valor){
+      projetos = valor;
+    }
+
+	private:
+	  int projetos;
+    
 };
 
